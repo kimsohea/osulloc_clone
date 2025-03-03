@@ -15,11 +15,12 @@ export default {
 		path: path.resolve(__dirname, "dist"), // 번들 파일 저장 경로
 		clean: true, // 기존 파일 삭제
 	},
+	devtool: "source-map",
 	devServer: {
 		static: path.resolve(__dirname, "public"), // 정적 파일 경로
 		port: 3000, // 개발 서버 포트
 		open: true, // 자동으로 브라우저 열기
-		hot: true, // HMR 활성화
+		hot: false, // HMR 비활성화
 	},
 	module: {
 		rules: [

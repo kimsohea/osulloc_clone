@@ -1,11 +1,11 @@
 {
 	"name": "osulloc_clone",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "./dist/bundle.js",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"start": "webpack serve",
+		"start": "webpack serve --hot=false",
 		"build": "webpack"
 	},
 	"devDependencies": {
